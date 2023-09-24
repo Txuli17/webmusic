@@ -8,14 +8,12 @@
     <title>login</title>
 </head>
 <body>
-    <div class="prueba">
-        <div class="sesion">
-            <h1>Inicio sesion</h1>
-            <input type="text" placeholder="E-mail" class="sesion-email">
-            <input type="password" placeholder="contraseña" class="sesion-password">
-            <button class="sesion-iniciar">iniciar sesion</button>
-            <button class="sesion-register">registrarse</button>
-        </div>
-    </div>
+    
+    <form action="/php folder/login.php" method="post"></form>
+    <label for="Gmail">Gmail:</label>
+    <input type="text" name="Gmail" id="Gmail" required>
+    <label for="Password">Contraseña</label>
+    <input type="text" name="Contraseña" id="Contraseña" required>
+    <input type="submit" name="submit" value="enviar">
 </body>
 </html>

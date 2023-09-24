@@ -6,13 +6,15 @@
     <input type="submit" name="submit" value="enviar">
 </form>
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $Gmail = $_POST["Gmail"];
-    $Contraseña = $_POST["Contraseña"];
-    if (empty($Gmail) || empty($Contraseña)) {
-        echo "Rellene todos los campos";
-    }
-    $conn->close();
+$servidor = "localhost"; 
+$usuario = "root"; 
+$contraseña = ""; // Reemplaza con tu contraseña.
+$base_de_datos = "usuarios";
+$conexion = new mysqli($localhost, $root, '', $usuarios);
+if ($conexion->connect_error) {
+    die("Conexión fallida: " . $conexion->connect_error);
 }
-
+if ($_SERVER ["REQUEST_METHOD"] == "POST")
+$Gmail1 = $_POST["Gmail"];
+echo $Gmail1;
 ?>
